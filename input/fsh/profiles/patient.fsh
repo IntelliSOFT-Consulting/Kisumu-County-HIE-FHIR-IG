@@ -1,19 +1,26 @@
 // This is a simple example of a FSH file.
 // This file can be renamed, and additional FSH files can be added.
 // SUSHI will look for definitions in any file using the .fsh ending.
-Profile: MyPatient
+
+Profile: BeneficiaryRegistry
 Parent: Patient
 Description: "An example profile of the Patient resource."
-* identifier.system 1..1 MS
+* identifier 0..* MS
+* identifier.type.coding.system 1..1 MS
+* identifier.type.coding.code 1..1 MS
 * identifier.value 1..1 MS
-* name 1..* MS
-* name.given 1..1 MS
-* name.family 1..1 MS
+* name 1..1 MS
+* active MS
+* gender 1..1 MS
+* gender
+* birthDate MS
+* maritalStatus.coding.system 1..1 MS
+* maritalStatus.coding.code 1..1 MS 
+* maritalStatus 
+* telecom 0..* MS
+// * telecom.use from $Contact_point_us_VS -> telecom.use is a code, not a URL
 * telecom.system 1..1 MS
 * telecom.value 1..1 MS
-* birthDate 1..1 MS
-* address.city 0..1 MS
-* address.state 1..1 MS
 
 
 // Instance: PatientExample
