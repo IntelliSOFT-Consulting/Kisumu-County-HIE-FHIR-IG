@@ -2,7 +2,7 @@
 // This file can be renamed, and additional FSH files can be added.
 // SUSHI will look for definitions in any file using the .fsh ending.
 
-Profile: BeneficiaryRegistry
+Profile: PatientRegistration
 Parent: Patient
 Description: "An example profile of the Patient resource."
 * identifier 0..* MS
