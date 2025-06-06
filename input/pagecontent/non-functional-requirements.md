@@ -1,0 +1,1 @@
+Provides the general attributes and features of the digital system to ensure usability and overcome technical and physical constraints.
