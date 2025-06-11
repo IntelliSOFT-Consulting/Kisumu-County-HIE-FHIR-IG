@@ -2,25 +2,64 @@
 // This file can be renamed, and additional FSH files can be added.
 // SUSHI will look for definitions in any file using the .fsh ending.
 
-Profile: PatientRegistration
+Profile: KsmPatient
 Parent: Patient
-Description: "An example profile of the Patient resource."
-* identifier 0..* MS
-* identifier.type.coding.system 1..1 MS
-* identifier.type.coding.code 1..1 MS
-* identifier.value 1..1 MS
-* name 1..1 MS
+Id: ksm-patient
+Title: "Patient - Kisumu Patient"
+Description: "Demographics for the Kisumu County Patient"
+* obeys PatientIdentification-1
+* obeys MustHavePhoneNumber-1
+
+* identifier 1..* MS
+
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+
+// STEP 2: Declare the slice
+* identifier contains 
+    NationalIDNo 0..1 MS and 
+    NUPI 0..1 MS and  
+    PassportNo 0..1 MS and 
+    BirthCertificateNo 0..1 MS 
+
+
+// STEP 3: Add constraints to the slice
+* identifier[NationalIDNo].value 1..1
+* identifier[NationalIDNo].system = "http://moh.kenya/identifier/nationalID-no"
+
+* identifier[NUPI].value 1..1
+* identifier[NUPI].system = "http://moh.kenya/identifier/NUPI"
+
+* identifier[PassportNo].value 1..1
+* identifier[PassportNo].system = "http://moh.kenya/identifier/passport-No"
+
+* identifier[BirthCertificateNo].value 1..1
+* identifier[BirthCertificateNo].system = "http://moh.kenya/identifier/birthCertificate-No"
+
+* name.family 1..1 MS
+* name.family ^short = "Patient's surname"
+* name.given 1..1 MS
+* name.given ^short = "Other patient names i.e first and middle name"
 * active MS
 * gender 1..1 MS
-* gender
 * birthDate MS
 * maritalStatus.coding.system 1..1 MS
 * maritalStatus.coding.code 1..1 MS 
-* maritalStatus 
 * telecom 0..* MS
-// * telecom.use from $Contact_point_us_VS -> telecom.use is a code, not a URL
 * telecom.system 1..1 MS
 * telecom.value 1..1 MS
+
+* address.city 0..1 MS
+* address.city ^short = "Patient's village/Estate/Landmark"
+* address.district 0..1 MS
+* address.district ^short = "Patient's Sub County  of residence"
+* address.state 0..1 MS
+* address.state ^short = "Patient's County  of residence"
+* address.country 0..1 MS
+
+* managingOrganization 1..1 MS
 
 
 // Instance: PatientExample
