@@ -1,13 +1,7 @@
-CodeSystem:   HIE.CSY
-Title:        "CodeSystem for Data Elements"
-Description:  "CodeSystem for Kisumu HIE patient"
-
+CodeSystem: MasterFacilityListCodesCS
+Id: master-facility-list-codes-cs
+Title: "Master Facility List (MFL) Codes"
+Description: "Codes found in the MFL."
 * ^experimental = false
-* ^caseSensitive = false
-* ^name = "MMT_A"
-* #AE1 "gender" "Gender Identity"
-* #AE2 "male" "Male gender"
-* #AE3 "female" "Female gender"
-* #AE4 "married" "Female gender"
-* #AE5 "female" "Female gender"
+* ^caseSensitive = true
 

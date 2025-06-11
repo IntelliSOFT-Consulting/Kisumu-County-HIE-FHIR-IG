@@ -1,4 +1,4 @@
-# Kisume HIE FHIR Implementation guide
+# Kisumu HIE FHIR Implementation guide
 
 #### Revision History
 
