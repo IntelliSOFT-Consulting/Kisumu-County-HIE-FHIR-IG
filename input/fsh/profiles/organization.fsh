@@ -23,3 +23,23 @@ Description: "Details for collecting information for Service provider (Facility)
 * name 1..1
 * contact 1..1
 * contact.address 1..1
+
+
+
+Instance: ksm-organization-example
+InstanceOf: KsmOrganization
+Title: "Example - Kisumu Facility Organization"
+Description: "A health facility in Kisumu County with KMFL code"
+Usage: #example
+
+* active = true
+* name = "Kisumu County Referral Hospital"
+
+* identifier[KMFLCode].system = "http://moh.kenya/identifier/kmfl-code"
+* identifier[KMFLCode].value = "12456"
+
+* contact[0].address.line = "Kisumu-Busia Road"
+* contact[0].address.city = "Kisumu"
+* contact[0].address.district = "Kisumu Central"
+* contact[0].address.state = "Kisumu"
+* contact[0].address.country = "Kenya"
