@@ -40,7 +40,7 @@ Description: "Demographics for the Kisumu County Patient"
 
 * name.family 1..1 MS
 * name.family ^short = "Patient's surname"
-* name.given 1..1 MS
+* name.given 1..* MS
 * name.given ^short = "Other patient names i.e first and middle name"
 * active MS
 * gender 1..1 MS
@@ -63,29 +63,41 @@ Description: "Demographics for the Kisumu County Patient"
 * managingOrganization only Reference(ksm-organization)
 
 
-// Instance: PatientExample
-// InstanceOf: MyPatient
-// Description: "An example of a patient with a license to krill."
-// * name
-//   * given[0] = "James"
-//   * family = "Pond"
+Instance: KisumuPatientExample
+InstanceOf: KsmPatient
+Title: "Example - Kisumu County Patient"
+Description: "A sample Kisumu patient with required identifiers, name, telecom, address, and organization reference."
+Usage: #example
 
+* active = true
+* gender = #female
+* birthDate = "1990-04-23"
 
-// Instance: MyPatientExample
-// InstanceOf: MyPatient
-// Title: "Example Patient Instance"
-// Description: "A sample patient conforming to the MyPatient profile."
+* identifier[NationalIDNo].system = "http://moh.kenya/identifier/nationalID-no"
+* identifier[NationalIDNo].value = "12345678"
 
-// * identifier.system = "http://hospital.smarthealth.org"
-// * identifier.value = "123456"
+* identifier[NUPI].system = "http://moh.kenya/identifier/NUPI"
+* identifier[NUPI].value = "NUPI-00123456789"
 
-// * name[0].given[0] = "John"
-// * name[0].family = "Doe"
+* identifier[PassportNo].system = "http://moh.kenya/identifier/passport-No"
+* identifier[PassportNo].value = "KE1234567"
 
-// * telecom[0].system = #phone
-// * telecom[0].value = "+1-555-555-1234"
+* identifier[BirthCertificateNo].system = "http://moh.kenya/identifier/birthCertificate-No"
+* identifier[BirthCertificateNo].value = "BC-19900423-XYZ"
 
-// * birthDate = "1980-01-01"
+* name[0].family = "Odhiambo"
+* name[0].given[0] = "Achieng"
+* name[0].given[1] = "Grace"
 
-// * address[0].state = "NY"
-// * address[0].city = "Metropolis"
+* telecom[0].system = #phone
+* telecom[0].value = "+254712345678"
+
+* maritalStatus.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
+* maritalStatus.coding[0].code = #M  // Example: M = Married
+
+* address[0].city = "Nyamasaria"
+* address[0].district = "Kisumu East"
+* address[0].state = "Kisumu"
+* address[0].country = "Kenya"
+
+* managingOrganization = Reference(ksm-organization-example)
