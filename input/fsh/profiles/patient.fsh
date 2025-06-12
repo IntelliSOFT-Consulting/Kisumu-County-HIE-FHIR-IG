@@ -60,6 +60,7 @@ Description: "Demographics for the Kisumu County Patient"
 * address.country 0..1 MS
 
 * managingOrganization 1..1 MS
+* managingOrganization only Reference(ksm-organization)
 
 
 // Instance: PatientExample
