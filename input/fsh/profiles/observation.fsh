@@ -1,6 +1,6 @@
 Profile: ObservationProfile
 Parent: Observation
-Id: ObservationProfile
+Id: ksm-anc-observation
 Title: "ObservationProfile"
 Description: "ObservationProfile"
 * identifier 0..* MS
