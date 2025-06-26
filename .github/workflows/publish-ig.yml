@@ -22,17 +22,11 @@ jobs:
           # Get the latest publisher - don't run the batch script but run the line directly
           args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
 
-      - name: Build IG
+      - name: Build FHIR IG
         run: |
           npm install -g fsh-sushi@latest
-          mkdir -p build-output
+          mkdir -p output
           ./_genonce
-
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: build-output
-          path: build-output
 
       - name: Upload via FTP to cPanel
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
