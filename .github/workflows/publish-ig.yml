@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: hl7fhir/ig-publisher-base:latest
+
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -22,17 +24,23 @@ jobs:
           # Get the latest publisher - don't run the batch script but run the line directly
           args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
 
-      - name: Build FHIR IG
+      - name: Build IG
         run: |
           npm install -g fsh-sushi@latest
-          mkdir -p output
-          ./_genonce
+          mkdir -p build-output
+          ./_genonce.sh
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-output
+          path: build-output
 
       - name: Upload via FTP to cPanel
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-            server: ${{ secrets.FTP_HOST }}
-            username: ${{ secrets.FTP_USERNAME }} 
-            password: ${{ secrets.FTP_PASSWORD }} 
-            local-dir: ./output/  # or ./build/
-            server-dir: /fhir.kisumuhealth.co.ke/  # adjust this based on your cPanel setup
+            server: ${{ secrets.FTP_HOST }} kisumuhealth.co.ke
+            username: ${{ secrets.FTP_USERNAME }} github-actions@kisumuhealth.co.ke
+            password: ${{ secrets.FTP_PASSWORD }} Ai45nCCUrGPr5AH
+            local-dir: ./output/
+            server-dir: /fhir.kisumuhealth.co.ke/
