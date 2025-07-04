@@ -17,13 +17,31 @@ Description:  "Codes for Encounter Service type"
 * include codes from system EncounterServiceTypeCS
 
 
-// ValueSet: maritalStatusVS
-// Title:        "Marital Status"
-// Description:  "Marital Status"
-// * ^experimental = false
-// * ^name = "MARITALVS"
+ValueSet: ANCReasonUltrasoundNotDoneVS
+Id: anc-reason-ultrasound-not-done-vs
+Title: "Reason Ultrasound Not Done"
+Description: "Reason Ultrasound Not Done"
+* ^experimental = false
+* ^name = "ANCREASONULTRASOUNDNOTDONEVS"
+* ^url = "http://example.org/fhir/ValueSet/encounter-servicetype-vs"
+* include codes from system ANCReasonUltrasoundNotDoneCS
 
-// * MMT.A#DE16
-// * MMT.A#DE17
-// * MMT.A#DE18
-// * MMT.A#DE19
+
+ValueSet: ANCAmnioticFluidLevelVS
+Id: anc-amniotic-fluid-level-vs
+Title: "Amniotic Fluid Level"
+Description: "Amniotic Fluid Level"
+* ^experimental = false
+* ^name = "ANCAMNIOTICFLUIDLEVELVS"
+* ^url = "http://example.org/fhir/ValueSet/encounter-servicetype-vs"
+* include codes from system ANCAmnioticFluidLevelCS
+
+
+ValueSet: ANCPlacentaLocationVS
+Id: anc-placenta-location-vs
+Title: "Placenta Location"
+Description: "Placenta Location"
+* ^experimental = false
+* ^name = "ANCPLACENTALOCATIONVS"
+* ^url = "http://example.org/fhir/ValueSet/encounter-servicetype-vs"
+* include codes from system ANCPlacentaLocationCS

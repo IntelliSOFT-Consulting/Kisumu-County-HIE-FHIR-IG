@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.kisumuhie
-canonical: http://example.org
+canonical: http://fhir.kisumuhealth.co.ke
 name: KISUMU-HIE-FHIR-IG
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
@@ -17,19 +17,23 @@ releaseLabel: ci-build
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: intellisoftkenya
-  url: http://example.org/example-publisher
+  url: https://www.intellisoftkenya.com/
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
-# dependencies:
+dependencies:
+
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
 #     version: 1.0.0
+
+
+
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
