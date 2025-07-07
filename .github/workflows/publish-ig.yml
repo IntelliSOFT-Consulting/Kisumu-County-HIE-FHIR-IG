@@ -33,12 +33,13 @@ jobs:
           name: build-output
           path: build-output
 
-      - name: Upload via FTP to cPanel
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Upload via FTP (alternative)
+        uses: sebastianpopp/ftp-action@v1.1.0
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
+          host: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build-output/
-          server-dir: /fhir.kisumuhealth.co.ke/
-          port: 21
+          localDir: ./build-output
+          remoteDir: /public_html/fhir.kisumuhealth.co.ke
+          options: "--parallel=2"
+
