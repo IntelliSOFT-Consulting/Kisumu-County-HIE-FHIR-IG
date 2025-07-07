@@ -40,6 +40,5 @@ jobs:
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           localDir: ./build-output
-          remoteDir: /public_html/fhir.kisumuhealth.co.ke
-          options: "--parallel=2"
+          remoteDir: /fhir.kisumuhealth.co.ke
 
