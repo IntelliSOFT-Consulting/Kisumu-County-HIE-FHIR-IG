@@ -34,11 +34,11 @@ jobs:
           path: build-output
 
       - name: Upload via FTP (alternative)
-        uses: sebastianpopp/ftp-action@v1.1.0
+        uses: khalyomede/ftp-deploy@v1.1.0
         with:
           host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: ./build-output
-          remoteDir: /fhir.kisumuhealth.co.ke
+          local: ./build-output
+          server-dir: /fhir.kisumuhealth.co.ke
 
