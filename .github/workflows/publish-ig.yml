@@ -33,12 +33,13 @@ jobs:
           name: build-output
           path: build-output
 
-      - name: Upload via FTP
-        uses: genietim/ftp-action@releases/v4
+      - name: Upload via FTP to cPanel
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          host: ${{ secrets.FTP_SERVER }}
-          user: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: dist
-          remoteDir: /fhir.kisumuhealth.co.ke
-
+          local-dir: ./build-output/
+          server-dir: /fhir.kisumuhealth.co.ke/
+          port: 21
+          protocol: ftps
