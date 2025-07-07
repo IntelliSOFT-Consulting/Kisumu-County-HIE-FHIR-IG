@@ -1,37 +1,32 @@
 name: Publish FHIR IG
 
-# Controls when the action will run.
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   pull_request:
     branches: [main]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
     runs-on: ubuntu-latest
     container:
       image: hl7fhir/ig-publisher-base:latest
 
-    
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Update the image to the latest publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          # Get the latest publisher - don't run the batch script but run the line directly
-          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+      - name: Download latest IG Publisher
+        run: |
+          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar \
+            -o ./input-cache/publisher.jar --create-dirs
 
-      - name: Build IG
+      - name: Install Sushi and build IG
         run: |
           npm install -g fsh-sushi@latest
           mkdir -p build-output
           ./_genonce.sh
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build-output
           path: build-output
@@ -39,8 +34,8 @@ jobs:
       - name: Upload via FTP to cPanel
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-            server: ${{ secrets.FTP_HOST }} kisumuhealth.co.ke
-            username: ${{ secrets.FTP_USERNAME }} github-actions@kisumuhealth.co.ke
-            password: ${{ secrets.FTP_PASSWORD }} Ai45nCCUrGPr5AH
-            local-dir: ./output/
-            server-dir: /fhir.kisumuhealth.co.ke/
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./output/
+          server-dir: /fhir.kisumuhealth.co.ke/
