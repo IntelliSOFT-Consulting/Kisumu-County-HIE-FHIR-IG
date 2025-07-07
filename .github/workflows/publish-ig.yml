@@ -23,8 +23,9 @@ jobs:
         run: |
           npm install -g fsh-sushi@latest
           mkdir -p build-output
-          cp -r output/* build-output/
           ./_genonce.sh
+          cp -r output/* build-output/
+
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
