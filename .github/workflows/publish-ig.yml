@@ -41,3 +41,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build-output/
           server-dir: /fhir.kisumuhealth.co.ke/
+          port: 21
