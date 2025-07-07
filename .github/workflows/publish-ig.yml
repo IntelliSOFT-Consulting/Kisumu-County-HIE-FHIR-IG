@@ -33,12 +33,12 @@ jobs:
           name: build-output
           path: build-output
 
-      - name: Upload via FTP (alternative)
-        uses: khalyomede/ftp-deploy@v1.1.0
+      - name: Upload via FTP
+        uses: genietim/ftp-action@releases/v4
         with:
           host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local: ./build-output
-          server-dir: /fhir.kisumuhealth.co.ke
+          localDir: dist
+          remoteDir: /public_html/fhir.kisumuhealth.co.ke
 
