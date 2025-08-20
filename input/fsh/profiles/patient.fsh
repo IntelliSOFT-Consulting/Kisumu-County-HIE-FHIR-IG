@@ -22,7 +22,8 @@ Description: "Demographics for the Kisumu County Patient"
     NationalIDNo 0..1 MS and 
     NUPI 0..1 MS and  
     PassportNo 0..1 MS and 
-    BirthCertificateNo 0..1 MS 
+    BirthCertificateNo 0..1 MS and
+    BirthNotificationNo 0..1 MS
 
 
 // STEP 3: Add constraints to the slice
@@ -37,6 +38,9 @@ Description: "Demographics for the Kisumu County Patient"
 
 * identifier[BirthCertificateNo].value 1..1
 * identifier[BirthCertificateNo].system = "http://moh.kenya/identifier/birthCertificate-No"
+
+* identifier[BirthNotificationNo].value 1..1
+* identifier[BirthNotificationNo].system = "http://moh.kenya/identifier/birthNotification-No"
 
 * name.family 1..1 MS
 * name.family ^short = "Patient's surname"
@@ -89,6 +93,9 @@ Usage: #example
 * identifier[BirthCertificateNo].system = "http://moh.kenya/identifier/birthCertificate-No"
 * identifier[BirthCertificateNo].value = "BC-19900423-XYZ"
 
+* identifier[BirthNotificationNo].system = "http://moh.kenya/identifier/birthNotification-No"
+* identifier[BirthNotificationNo].value = "BN-19900423-XYZ"
+
 * name[0].family = "Odhiambo"
 * name[0].given[0] = "Achieng"
 * name[0].given[1] = "Grace"
@@ -103,5 +110,7 @@ Usage: #example
 * address[0].district = "Kisumu East"
 * address[0].state = "Kisumu"
 * address[0].country = "Kenya"
+* address[0].line[0] = "Milimani Estate"
+* address[0].line[1] = "Hse 13"
 
 * managingOrganization = Reference(ksm-organization-example)
