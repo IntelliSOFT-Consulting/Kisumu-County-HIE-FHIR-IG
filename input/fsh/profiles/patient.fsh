@@ -59,6 +59,10 @@ Description: "Demographics for the Kisumu County Patient"
 * address.state ^short = "Patient's County  of residence"
 * address.country 0..1 MS
 
+* address.line 0..2 MS
+* address.line[0]
+* address.line[1]
+
 * managingOrganization 1..1 MS
 * managingOrganization only Reference(ksm-organization)
 
