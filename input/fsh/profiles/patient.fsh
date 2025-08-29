@@ -22,7 +22,8 @@ Description: "Demographics for the Kisumu County Patient"
     NationalIDNo 0..1 MS and 
     NUPI 0..1 MS and  
     PassportNo 0..1 MS and 
-    BirthCertificateNo 0..1 MS 
+    BirthCertificateNo 0..1 MS and 
+    WonderId 0..1 MS
 
 
 // STEP 3: Add constraints to the slice
@@ -37,6 +38,9 @@ Description: "Demographics for the Kisumu County Patient"
 
 * identifier[BirthCertificateNo].value 1..1
 * identifier[BirthCertificateNo].system = "http://moh.kenya/identifier/birthCertificate-No"
+
+* identifier[WonderId].value 1..1
+* identifier[WonderId].system = "http://moh.kenya/identifier/WONDER4HEALTH-ID"
 
 * name.family 1..1 MS
 * name.family ^short = "Patient's surname"
