@@ -23,7 +23,8 @@ Description: "Demographics for the Kisumu County Patient"
     NUPI 0..1 MS and  
     PassportNo 0..1 MS and 
     BirthCertificateNo 0..1 MS and
-    BirthNotificationNo 0..1 MS
+    BirthNotificationNo 0..1 MS and 
+    WonderId 0..1 MS
 
 
 // STEP 3: Add constraints to the slice
@@ -42,6 +43,9 @@ Description: "Demographics for the Kisumu County Patient"
 * identifier[BirthNotificationNo].value 1..1
 * identifier[BirthNotificationNo].system = "http://moh.kenya/identifier/birthNotification-No"
 
+* identifier[WonderId].value 1..1
+* identifier[WonderId].system = "http://moh.kenya/identifier/WONDER4HEALTH-ID"
+
 * name.family 1..1 MS
 * name.family ^short = "Patient's surname"
 * name.given 1..* MS
@@ -56,12 +60,17 @@ Description: "Demographics for the Kisumu County Patient"
 * telecom.value 1..1 MS
 
 * address.city 0..1 MS
-* address.city ^short = "Patient's village/Estate/Landmark"
+* address.city ^short = "Patient's Sub-County"
 * address.district 0..1 MS
-* address.district ^short = "Patient's Sub County  of residence"
+* address.district ^short = "Patient's Ward  of residence"
 * address.state 0..1 MS
 * address.state ^short = "Patient's County  of residence"
 * address.country 0..1 MS
+* address.postalCode 0..1 MS
+* address.postalCode ^short = "Patient's postal code"
+* address.text 0..1 MS
+* address.text ^short = "Patient's Address"
+
 
 * address.line 0..2 MS
 * address.line[0]
@@ -110,6 +119,8 @@ Usage: #example
 * address[0].district = "Kisumu East"
 * address[0].state = "Kisumu"
 * address[0].country = "Kenya"
+* address[0].postalCode = "40100"
+* address[0].text = "Nyamasaria, Kisumu East, Kisumu County, Kenya"
 * address[0].line[0] = "Milimani Estate"
 * address[0].line[1] = "Hse 13"
 
