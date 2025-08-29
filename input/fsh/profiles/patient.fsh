@@ -22,7 +22,8 @@ Description: "Demographics for the Kisumu County Patient"
     NationalIDNo 0..1 MS and 
     NUPI 0..1 MS and  
     PassportNo 0..1 MS and 
-    BirthCertificateNo 0..1 MS 
+    BirthCertificateNo 0..1 MS and 
+    WonderId 0..1 MS
 
 
 // STEP 3: Add constraints to the slice
@@ -38,6 +39,9 @@ Description: "Demographics for the Kisumu County Patient"
 * identifier[BirthCertificateNo].value 1..1
 * identifier[BirthCertificateNo].system = "http://moh.kenya/identifier/birthCertificate-No"
 
+* identifier[WonderId].value 1..1
+* identifier[WonderId].system = "http://moh.kenya/identifier/WONDER4HEALTH-ID"
+
 * name.family 1..1 MS
 * name.family ^short = "Patient's surname"
 * name.given 1..* MS
@@ -52,12 +56,17 @@ Description: "Demographics for the Kisumu County Patient"
 * telecom.value 1..1 MS
 
 * address.city 0..1 MS
-* address.city ^short = "Patient's village/Estate/Landmark"
+* address.city ^short = "Patient's Sub-County"
 * address.district 0..1 MS
-* address.district ^short = "Patient's Sub County  of residence"
+* address.district ^short = "Patient's Ward  of residence"
 * address.state 0..1 MS
 * address.state ^short = "Patient's County  of residence"
 * address.country 0..1 MS
+* address.postalCode 0..1 MS
+* address.postalCode ^short = "Patient's postal code"
+* address.text 0..1 MS
+* address.text ^short = "Patient's Address"
+
 
 * managingOrganization 1..1 MS
 * managingOrganization only Reference(ksm-organization)
@@ -99,5 +108,7 @@ Usage: #example
 * address[0].district = "Kisumu East"
 * address[0].state = "Kisumu"
 * address[0].country = "Kenya"
+* address[0].postalCode = "40100"
+* address[0].text = "Nyamasaria, Kisumu East, Kisumu County, Kenya"
 
 * managingOrganization = Reference(ksm-organization-example)
