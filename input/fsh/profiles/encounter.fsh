@@ -1,4 +1,4 @@
-Profile: Ksm-PatientEncounter
+Profile: KsmPatientEncounter
 Parent: Encounter
 Id: ksm-patient-encounter
 Title: "Encounter - Kisumu Patient"
