@@ -1,0 +1,197 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+<h3>Terminology: Value Sets </h3><p>These define sets of codes used by systems conforming to this implementation guide.</p><table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-anc-amniotic-fluid-level-vs.html"
+                  title="ValueSet/anc-amniotic-fluid-level-vs">Amniotic Fluid Level</a>
+            </td>
+            <td><p>Amniotic Fluid Level</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-encounter-servicetype-vs.html"
+                  title="ValueSet/encounter-servicetype-vs">Encounter Service Type</a>
+            </td>
+            <td><p>Codes for Encounter Service type</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-gender-vs.html" title="ValueSet/gender-vs">Gender</a>
+            </td>
+            <td><p>Administrative gender</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-KCHIPBloodGroupVS.html"
+                  title="ValueSet/KCHIPBloodGroupVS">KCHIP Blood Group and Rh Factor</a>
+            </td>
+            <td><p>Combined ABO blood group and Rh factor result</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-KCHIPFetalLieVS.html" title="ValueSet/KCHIPFetalLieVS">KCHIP Fetal Lie</a>
+            </td>
+            <td><p>Fetal lie options for ANC observation</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-KCHIPFetalPresentationVS.html"
+                  title="ValueSet/KCHIPFetalPresentationVS">KCHIP Fetal Presentation</a>
+            </td>
+            <td><p>Fetal presentation options for ANC observation</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-KCHIPHIVStatusVS.html" title="ValueSet/KCHIPHIVStatusVS">KCHIP HIV Status</a>
+            </td>
+            <td><p>HIV status as known at the point of HIE exchange</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-KCHIPLabourOnsetVS.html"
+                  title="ValueSet/KCHIPLabourOnsetVS">KCHIP Labour Onset Type</a>
+            </td>
+            <td><p>How labour was initiated</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-KCHIPLiquorColourVS.html"
+                  title="ValueSet/KCHIPLiquorColourVS">KCHIP Liquor Colour</a>
+            </td>
+            <td><p>Character of amniotic fluid after membrane rupture</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-KCHIPMembraneStatusVS.html"
+                  title="ValueSet/KCHIPMembraneStatusVS">KCHIP Membrane Status</a>
+            </td>
+            <td><p>Status of membranes during labour</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-KCHIPDiagnosisVS.html" title="ValueSet/KCHIPDiagnosisVS">KCHIP Pregnancy Diagnoses</a>
+            </td>
+            <td><p>Clinical diagnoses identified in the KCHIP Minimum Dataset (Section 5)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-KCHIPSyphilisStatusVS.html"
+                  title="ValueSet/KCHIPSyphilisStatusVS">KCHIP Syphilis Status</a>
+            </td>
+            <td><p>Syphilis (RPR) status as known at the point of HIE exchange</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-KCHIPUrineProteinVS.html"
+                  title="ValueSet/KCHIPUrineProteinVS">KCHIP Urine Protein Dipstick</a>
+            </td>
+            <td><p>Semi-quantitative urine protein dipstick result</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MNCHAppointmentStatusVS.html"
+                  title="ValueSet/MNCHAppointmentStatusVS">MNCH Appointment Status</a>
+            </td>
+            <td><p>Status of scheduled appointment (MNCH.F.DE.2)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MNCHBloodLossVS.html" title="ValueSet/MNCHBloodLossVS">MNCH Blood Loss Category</a>
+            </td>
+            <td><p>Estimated blood loss at delivery (MNCH.E.DE.39)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MNCHConditionCodeVS.html"
+                  title="ValueSet/MNCHConditionCodeVS">MNCH Condition Codes</a>
+            </td>
+            <td><p>Clinical conditions documented in MNCH.H</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MNCHConditionSeverityVS.html"
+                  title="ValueSet/MNCHConditionSeverityVS">MNCH Condition Severity</a>
+            </td>
+            <td><p>Severity classification for conditions (MNCH.H.DE7)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MNCHDeliveryCadreVS.html"
+                  title="ValueSet/MNCHDeliveryCadreVS">MNCH Delivery Cadre</a>
+            </td>
+            <td><p>Person conducting the delivery (MNCH.E.DE.60)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MNCHDeliveryComplicationsVS.html"
+                  title="ValueSet/MNCHDeliveryComplicationsVS">MNCH Delivery Complications</a>
+            </td>
+            <td><p>Complications during delivery (MNCH.E.DE.13)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MNCHDeliveryModeVS.html"
+                  title="ValueSet/MNCHDeliveryModeVS">MNCH Delivery Mode</a>
+            </td>
+            <td><p>Mode of delivery (MNCH.E.DE.8)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MNCHFamilyPlanningMethodVS.html"
+                  title="ValueSet/MNCHFamilyPlanningMethodVS">MNCH Family Planning Methods</a>
+            </td>
+            <td><p>Family planning methods used by the mother (MNCH.F.DE.39)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MNCHHIVResultVS.html" title="ValueSet/MNCHHIVResultVS">MNCH HIV Test Result</a>
+            </td>
+            <td><p>HIV test result (MNCH.E.DE.3 / MNCH.F.DE.25)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MNCHHAARTStatusVS.html"
+                  title="ValueSet/MNCHHAARTStatusVS">MNCH Mother on HAART</a>
+            </td>
+            <td><p>Mother's HAART status (MNCH.F.DE.29)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MNCHPNCTimingVS.html" title="ValueSet/MNCHPNCTimingVS">MNCH PNC Visit Timing</a>
+            </td>
+            <td><p>Timing of postnatal care visit (MNCH.F.DE.7)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MNCHPlaceOfDeliveryVS.html"
+                  title="ValueSet/MNCHPlaceOfDeliveryVS">MNCH Place of Delivery</a>
+            </td>
+            <td><p>Location of delivery (MNCH.E.DE.56)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MNCHProcedureCodeVS.html"
+                  title="ValueSet/MNCHProcedureCodeVS">MNCH Procedure Codes</a>
+            </td>
+            <td><p>Procedures performed during MNCH visits (MNCH.G)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-anc-placenta-location-vs.html"
+                  title="ValueSet/anc-placenta-location-vs">Placenta Location</a>
+            </td>
+            <td><p>Placenta Location</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-anc-reason-ultrasound-not-done-vs.html"
+                  title="ValueSet/anc-reason-ultrasound-not-done-vs">Reason Ultrasound Not Done</a>
+            </td>
+            <td><p>Reason Ultrasound Not Done</p></td>
+         </tr>
+      </tbody>
+   </table>
+<p><a href="artifacts.html#3">View on full artifacts summary</a></p>
+</div>

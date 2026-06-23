@@ -1,0 +1,128 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+<h3>Example: Example Instances </h3><p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p><table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-ConsentDeclinedExample01.html"
+                  title="Consent/ConsentDeclinedExample01">ConsentDeclinedExample01</a>
+            </td>
+            <td><p></p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-ConsentGrantedExample01.html"
+                  title="Consent/ConsentGrantedExample01">ConsentGrantedExample01</a>
+            </td>
+            <td><p></p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-KisumuPatientExample.html"
+                  title="Patient/KisumuPatientExample">Example - Kisumu County Patient</a>
+            </td>
+            <td><p>A sample Kisumu patient with required identifiers, name, telecom, address, and organization reference.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-ksm-organization-example.html"
+                  title="Organization/ksm-organization-example">Example - Kisumu Facility Organization</a>
+            </td>
+            <td><p>A health facility in Kisumu County with KMFL code</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Example-KsmUltraSoundObservation.html"
+                  title="Observation/Example-KsmUltraSoundObservation">Example ANC Ultrasound Observation</a>
+            </td>
+            <td><p>A sample ANC ultrasound observation for a pregnant woman in Kisumu.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationDispense-ExampleMedicationDispense.html"
+                  title="MedicationDispense/ExampleMedicationDispense">Example Medication Dispense</a>
+            </td>
+            <td><p>An example instance of a medication dispense record following the MedicationDispenseProfile.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleObservation.html"
+                  title="Observation/ExampleObservation">Example Observation</a>
+            </td>
+            <td><p>An example instance of an observation following the ObservationProfile.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-ExamplePractitioner.html"
+                  title="Practitioner/ExamplePractitioner">Example Practitioner</a>
+            </td>
+            <td><p>An example instance of a healthcare practitioner following the PractitionerProfile.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-KCHIPANCVitalsExample.html"
+                  title="Observation/KCHIPANCVitalsExample">Example – KCHIP ANC Clinical Observations</a>
+            </td>
+            <td><p></p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationStatement-KCHIPMedicationStatementExample.html"
+                  title="MedicationStatement/KCHIPMedicationStatementExample">Example – KCHIP Current Medication</a>
+            </td>
+            <td><p></p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-KCHIPDangerSignsExample.html"
+                  title="Observation/KCHIPDangerSignsExample">Example – KCHIP Danger Signs</a>
+            </td>
+            <td><p></p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-KCHIPLabResultsExample.html"
+                  title="Observation/KCHIPLabResultsExample">Example – KCHIP Key Laboratory Results</a>
+            </td>
+            <td><p></p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-KCHIPLabourObservationExample.html"
+                  title="Observation/KCHIPLabourObservationExample">Example – KCHIP Labour Observation</a>
+            </td>
+            <td><p></p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-KCHIPPregnancyContextExample.html"
+                  title="Observation/KCHIPPregnancyContextExample">Example – KCHIP Pregnancy Context</a>
+            </td>
+            <td><p></p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-KCHIPDiagnosisExample.html"
+                  title="Condition/KCHIPDiagnosisExample">Example – KCHIP Pregnancy Diagnosis</a>
+            </td>
+            <td><p></p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-KCHIPReferralExample.html"
+                  title="ServiceRequest/KCHIPReferralExample">Example – KCHIP Referral</a>
+            </td>
+            <td><p></p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-KisumuEncounterExample.html"
+                  title="Encounter/KisumuEncounterExample">Example – Kisumu ANC Encounter</a>
+            </td>
+            <td><p>A sample ANC encounter used by KCHIP minimum dataset examples.</p></td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+<p><a href="artifacts.html#5">View on full artifacts summary</a></p>
+</div>

@@ -1,0 +1,55 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+<h3>Terminology: Code Systems </h3><p>These define new code systems used by systems conforming to this implementation guide.</p><table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-anc-amniotic-fluid-level-cs.html"
+                  title="CodeSystem/anc-amniotic-fluid-level-cs">Amniotic Fluid Level</a>
+            </td>
+            <td><p>Amniotic Fluid Level</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-encounter-servicetype-cs.html"
+                  title="CodeSystem/encounter-servicetype-cs">Encounter Service Type</a>
+            </td>
+            <td><p>Code System for service types for a given encounter</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KCHIPCodes.html" title="CodeSystem/KCHIPCodes">KCHIP Minimum Dataset Code System</a>
+            </td>
+            <td><p>Local codes for KCHIP data elements without standard LOINC/SNOMED equivalents</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-MNCHCodes.html" title="CodeSystem/MNCHCodes">MNCH DAK Local Code System</a>
+            </td>
+            <td><p>Local codes for Kisumu HIE MNCH data dictionary elements</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-master-facility-list-codes-cs.html"
+                  title="CodeSystem/master-facility-list-codes-cs">Master Facility List (MFL) Codes</a>
+            </td>
+            <td><p>Codes found in the MFL.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-anc-placenta-location.html"
+                  title="CodeSystem/anc-placenta-location">Placenta Location</a>
+            </td>
+            <td><p>Placenta Location</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-anc-reason-ultrasound-not-done.html"
+                  title="CodeSystem/anc-reason-ultrasound-not-done">Reason Ultrasound Not Done</a>
+            </td>
+            <td><p>Reason Ultrasound Not Done</p></td>
+         </tr>
+      </tbody>
+   </table>
+<p><a href="artifacts.html#4">View on full artifacts summary</a></p>
+</div>

@@ -1,0 +1,197 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+<h3>Structures: Resource Profiles </h3><p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p><table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ksm-anc-condition.html"
+                  title="StructureDefinition/ksm-anc-condition">ANC Condition</a>
+            </td>
+            <td><p>Kisumu ANC Condition</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ksm-anc-relatedperson.html"
+                  title="StructureDefinition/ksm-anc-relatedperson">ANC RelatedPerson</a>
+            </td>
+            <td><p>ANC RelatedPerson</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ksm-patient-appointment.html"
+                  title="StructureDefinition/ksm-patient-appointment">Appointment - Kisumu Patient</a>
+            </td>
+            <td><p>A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s).</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ksm-patient-encounter.html"
+                  title="StructureDefinition/ksm-patient-encounter">Encounter - Kisumu Patient</a>
+            </td>
+            <td><p>An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-kchip-anc-vitals.html"
+                  title="StructureDefinition/kchip-anc-vitals">KCHIP ANC Clinical Observations</a>
+            </td>
+            <td><p>Key longitudinal clinical observations from the KCHIP minimum dataset: blood pressure, pulse, weight, fundal height, fetal lie, fetal presentation, fetal heart sounds, and fetal heart rate.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-kchip-medication-statement.html"
+                  title="StructureDefinition/kchip-medication-statement">KCHIP Current Medication</a>
+            </td>
+            <td><p>Current treatment or medications for a pregnant woman exchanged via the KCHIP minimum dataset (Section 6 – Current Treatment/Medications).</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-kchip-danger-signs.html"
+                  title="StructureDefinition/kchip-danger-signs">KCHIP Danger Signs</a>
+            </td>
+            <td><p>Maternal danger signs from the KCHIP minimum dataset (Section 8): vaginal bleeding, severe headache, blurred vision, reduced fetal movements, convulsions, and severe abdominal pain. Each is recorded as a boolean (present/absent).</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-kchip-lab-results.html"
+                  title="StructureDefinition/kchip-lab-results">KCHIP Key Laboratory Results</a>
+            </td>
+            <td><p>Key laboratory results from the KCHIP minimum dataset: haemoglobin, HIV status, syphilis status, blood group/Rh factor, and urine protein.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-kchip-labour-observation.html"
+                  title="StructureDefinition/kchip-labour-observation">KCHIP Labour Observation</a>
+            </td>
+            <td><p>Clinical observations during labour from the KCHIP minimum dataset (Section 7): onset of labour, cervical dilation, fetal heart rate, membrane status, and colour of liquor.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-kchip-pregnancy-context.html"
+                  title="StructureDefinition/kchip-pregnancy-context">KCHIP Pregnancy Context</a>
+            </td>
+            <td><p>Pregnancy context data for the KCHIP minimum dataset: gravidity, parity, delivery history and risk, LMP, EDD, gestational age (clinical and by ultrasound).</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-kchip-pregnancy-diagnosis.html"
+                  title="StructureDefinition/kchip-pregnancy-diagnosis">KCHIP Pregnancy Diagnosis</a>
+            </td>
+            <td><p>Clinical diagnosis for a pregnant woman exchanged via the KCHIP minimum dataset (Section 5). Covers both uncomplicated and complicated pregnancy diagnoses.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-kchip-referral.html"
+                  title="StructureDefinition/kchip-referral">KCHIP Referral Request</a>
+            </td>
+            <td><p>Referral to another facility or specialist, exchanged as part of the KCHIP minimum dataset (Section 6 – Referral Reason).</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-consent-kisumu-patient.html"
+                  title="StructureDefinition/consent-kisumu-patient">Kisumu Patient Consent Profile</a>
+            </td>
+            <td><p>Profile for capturing Kisumu patient consent decisions in Kisumu health information exchange, including explicit capture of consent refusal reasons.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-hiv-observation.html"
+                  title="StructureDefinition/mnch-hiv-observation">MNCH HIV Test Observation</a>
+            </td>
+            <td><p>HIV testing during delivery or PNC visit (MNCH.E.DE.2–DE.6 / MNCH.F.DE.25)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-condition.html"
+                  title="StructureDefinition/mnch-condition">MNCH Maternal Condition</a>
+            </td>
+            <td><p>A clinical condition or diagnosis documented for a pregnant or postnatal woman (MNCH.H)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-newborn-vitals.html"
+                  title="StructureDefinition/mnch-newborn-vitals">MNCH Newborn Vitals at Delivery</a>
+            </td>
+            <td><p>Newborn measurements and Apgar scores at delivery (MNCH.E.DE.49–DE.55)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-delivery-encounter.html"
+                  title="StructureDefinition/mnch-delivery-encounter">MNCH Obstetric Delivery Encounter</a>
+            </td>
+            <td><p>Records the obstetric delivery visit for a pregnant woman (MNCH.E)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-pnc-baby-observation.html"
+                  title="StructureDefinition/mnch-pnc-baby-observation">MNCH PNC Baby Assessment</a>
+            </td>
+            <td><p>Newborn assessment during PNC visit (MNCH.F.DE.47–DE.52)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-pnc-maternal-vitals.html"
+                  title="StructureDefinition/mnch-pnc-maternal-vitals">MNCH PNC Maternal Vitals</a>
+            </td>
+            <td><p>Vital signs and clinical findings for the mother during a PNC visit (MNCH.F.DE.12–DE.24)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-pnc-encounter.html"
+                  title="StructureDefinition/mnch-pnc-encounter">MNCH Postnatal Care (PNC) Visit</a>
+            </td>
+            <td><p>Records the postnatal care visit (MNCH.F)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-procedure.html"
+                  title="StructureDefinition/mnch-procedure">MNCH Procedure</a>
+            </td>
+            <td><p>A clinical procedure or intervention performed during an MNCH visit (MNCH.G)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MedicationDispenseProfile.html"
+                  title="StructureDefinition/MedicationDispenseProfile">MedicationDispenseProfile</a>
+            </td>
+            <td><p>Profile for a medication dispense record.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ksm-anc-observation.html"
+                  title="StructureDefinition/ksm-anc-observation">ObservationProfile</a>
+            </td>
+            <td><p>ObservationProfile</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ksm-patient.html"
+                  title="StructureDefinition/ksm-patient">Patient - Kisumu Patient</a>
+            </td>
+            <td><p>Demographics for the Kisumu County Patient</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PractitionerProfile.html"
+                  title="StructureDefinition/PractitionerProfile">PractitionerProfile</a>
+            </td>
+            <td><p>PractitionerProfile</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ksm-organization.html"
+                  title="StructureDefinition/ksm-organization">Service Provider - Facility</a>
+            </td>
+            <td><p>Details for collecting information for Service provider (Facility) within Kisumu County</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ksm-ultrasound-observation.html"
+                  title="StructureDefinition/ksm-ultrasound-observation">Ultrasound - Kisumu Patient</a>
+            </td>
+            <td><p>Profile for ANC ultrasound including metadata and findings</p></td>
+         </tr>
+      </tbody>
+   </table>
+<p><a href="artifacts.html#1">View on full artifacts summary</a></p>
+</div>
