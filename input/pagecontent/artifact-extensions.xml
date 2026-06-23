@@ -1,0 +1,169 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+<h3>Structures: Extension Definitions </h3><p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p><table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-consent-decline-reason.html"
+                  title="StructureDefinition/consent-decline-reason">Consent Decline Reason</a>
+            </td>
+            <td><p>Captures the reason why a patient declined consent.</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-appointment-status.html"
+                  title="StructureDefinition/mnch-appointment-status">MNCH Appointment Status</a>
+            </td>
+            <td><p>Status of the client's scheduled appointment (MNCH.F.DE.2)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-baby-immunization-started.html"
+                  title="StructureDefinition/mnch-baby-immunization-started">MNCH Baby Immunization Started</a>
+            </td>
+            <td><p>Whether newborn immunizations have been given (MNCH.F.DE.53)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-blood-loss.html"
+                  title="StructureDefinition/mnch-blood-loss">MNCH Blood Loss</a>
+            </td>
+            <td><p>Estimated blood loss at delivery (MNCH.E.DE.39)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-condition-of-mother.html"
+                  title="StructureDefinition/mnch-condition-of-mother">MNCH Condition of Mother</a>
+            </td>
+            <td><p>Clinical status of the mother post-delivery (MNCH.E.DE.45)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-delivery-complications.html"
+                  title="StructureDefinition/mnch-delivery-complications">MNCH Delivery Complications</a>
+            </td>
+            <td><p>Complications occurring during delivery (MNCH.E.DE.13)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-delivery-by.html"
+                  title="StructureDefinition/mnch-delivery-by">MNCH Delivery Conducted By</a>
+            </td>
+            <td><p>Cadre of the person who conducted the delivery (MNCH.E.DE.60)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-drugs-at-delivery.html"
+                  title="StructureDefinition/mnch-drugs-at-delivery">MNCH Drugs Administered at Delivery</a>
+            </td>
+            <td><p>Medications given at delivery (MNCH.E.DE.48)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-fp-counseling.html"
+                  title="StructureDefinition/mnch-fp-counseling">MNCH Family Planning Counseling</a>
+            </td>
+            <td><p>Whether the mother received family planning counseling (MNCH.F.DE.35)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-fp-method.html"
+                  title="StructureDefinition/mnch-fp-method">MNCH Family Planning Method</a>
+            </td>
+            <td><p>Family planning method chosen by the mother (MNCH.F.DE.39)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-hei-art-prophylaxis.html"
+                  title="StructureDefinition/mnch-hei-art-prophylaxis">MNCH HEI Infant ART Prophylaxis</a>
+            </td>
+            <td><p>ART prophylaxis given to HIV-exposed infant (MNCH.F.DE.54)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-hiv-retesting.html"
+                  title="StructureDefinition/mnch-hiv-retesting">MNCH HIV Retesting</a>
+            </td>
+            <td><p>HIV re-testing done at 6/14 weeks and 9 months postpartum (MNCH.F.DE.34)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-infant-cotrimoxazole.html"
+                  title="StructureDefinition/mnch-infant-cotrimoxazole">MNCH Infant Cotrimoxazole Prophylaxis</a>
+            </td>
+            <td><p>Cotrimoxazole initiated for HIV-exposed infant (MNCH.F.DE.58)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-meconium-stained-liquor.html"
+                  title="StructureDefinition/mnch-meconium-stained-liquor">MNCH Meconium Stained Liquor</a>
+            </td>
+            <td><p>Presence of meconium in amniotic fluid (MNCH.E.DE.47)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-mode-of-delivery.html"
+                  title="StructureDefinition/mnch-mode-of-delivery">MNCH Mode of Delivery</a>
+            </td>
+            <td><p>The method by which the baby was delivered (MNCH.E.DE.8)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-mode-of-delivery-procedure.html"
+                  title="StructureDefinition/mnch-mode-of-delivery-procedure">MNCH Mode of Delivery (Procedure context)</a>
+            </td>
+            <td><p>Mode of delivery documented as part of a procedure record (MNCH.G.DE27)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-cotrimoxazole-mother.html"
+                  title="StructureDefinition/mnch-cotrimoxazole-mother">MNCH Mother Cotrimoxazole Prophylaxis</a>
+            </td>
+            <td><p>Cotrimoxazole prophylaxis initiated for HIV-positive mother (MNCH.F.DE.33)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-mother-haart-status.html"
+                  title="StructureDefinition/mnch-mother-haart-status">MNCH Mother on HAART</a>
+            </td>
+            <td><p>Whether the mother is on HAART (MNCH.F.DE.29)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-obstructed-labour.html"
+                  title="StructureDefinition/mnch-obstructed-labour">MNCH Obstructed Labour</a>
+            </td>
+            <td><p>Whether delivery involved obstructed labour (MNCH.E.DE.44)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-pnc-timing.html"
+                  title="StructureDefinition/mnch-pnc-timing">MNCH PNC Visit Timing</a>
+            </td>
+            <td><p>Point in postnatal period when the visit occurred (MNCH.F.DE.7)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-place-of-delivery.html"
+                  title="StructureDefinition/mnch-place-of-delivery">MNCH Place of Delivery</a>
+            </td>
+            <td><p>Where the delivery took place (MNCH.E.DE.56)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-preeclampsia-eclampsia.html"
+                  title="StructureDefinition/mnch-preeclampsia-eclampsia">MNCH Pre-eclampsia/Eclampsia</a>
+            </td>
+            <td><p>Whether pre-eclampsia or eclampsia occurred (MNCH.E.DE.43)</p></td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mnch-resuscitation-done.html"
+                  title="StructureDefinition/mnch-resuscitation-done">MNCH Resuscitation Done</a>
+            </td>
+            <td><p>Whether the baby required resuscitation at birth (MNCH.E.DE.46)</p></td>
+         </tr>
+      </tbody>
+   </table>
+<p><a href="artifacts.html#2">View on full artifacts summary</a></p>
+</div>

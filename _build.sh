@@ -110,7 +110,22 @@ function build_ig() {
   if [ "$online" = "false" ]; then
     args+=("-tx" "n/a")
   fi
-  run_publisher "${args[@]}" "$@"
+  run_publisher "${args[@]}" "$@" || true
+  refresh_artifact_pages
+}
+
+function refresh_artifact_pages() {
+  if [ ! -f "scripts/generate-artifact-pages.py" ] || [ ! -f "temp/pages/_includes/artifacts.xml" ]; then
+    return 0
+  fi
+  echo "Refreshing per-type artifact pages from artifacts summary..."
+  python3 scripts/generate-artifact-pages.py || return 1
+  export PATH="/opt/homebrew/lib/ruby/gems/4.0.0/bin:/opt/homebrew/opt/ruby/bin:${PATH}"
+  if command -v jekyll >/dev/null 2>&1; then
+    jekyll build -s temp/pages -d output
+  else
+    echo "Jekyll not found; artifact pages updated in input/pagecontent only."
+  fi
 }
 
 function build_nosushi() {

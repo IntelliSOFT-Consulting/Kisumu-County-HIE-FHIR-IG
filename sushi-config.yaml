@@ -68,6 +68,16 @@ pages:
     title: Functional Requirements
   non-functional-requirements.md:
     title: Non-Functional Requirements
+  artifact-profiles.xml:
+    title: Profiles
+  artifact-extensions.xml:
+    title: Extensions
+  artifact-valuesets.xml:
+    title: Value Sets
+  artifact-codesystems.xml:
+    title: Code Systems
+  artifact-examples.xml:
+    title: Examples
 #
 #
 #
@@ -92,9 +102,6 @@ pages:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
